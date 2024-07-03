@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<body>
+    <a id="downId"></a>
+</body>
+</html>
+<script>
+function downloadFile (url) {
+  const downloadLink = document.getElementById('downId')
+  downloadLink.href = url
+  downloadLink.type = 'video/mp4';
+  // 设置下载属性
+  downloadLink.download = url.substring(url.lastIndexOf('/') + 1)
+  // 触发点击下载
+  downloadLink.click()
+  // 清理下载链接
+  document.body.removeChild(downloadLink)
+}
+
+function getQueryString (name) {
+  let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
+  let r = window.location.search.substr(1).match(reg)
+  if (r != null) {
+    return decodeURIComponent(r[ 2 ])
+  }
+  return null
+}
+
+let url = getQueryString('url')
+if (url.length === 0) {
+  console.log('没有数据源')
+}
+// 测试示例
+downloadFile(url)
+</script>

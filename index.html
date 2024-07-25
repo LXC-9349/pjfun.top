@@ -80,8 +80,33 @@ body,
   background-color: #193c6d;
   background-image: linear-gradient(313deg, #003073 0%, #1a3c7f 50%, #029797 100%);
   animation: hue 3s linear infinite;
-}</style></head><body><div id=app><div class=bg><div id=loader-wrapper><div>欢迎使用<p>𝓟𝓙 𝓕𝓾𝓷<p>𝕃𝕆𝔸𝔻𝕀ℕ𝔾...</div></div></div></div><noscript><div style="text-align: center">请开启 JavaScript</div></noscript><script src=https://unpkg.com/vue@2.7.16/dist/vue.min.js></script><script src=https://unpkg.com/element-ui@2.15.14/lib/index.js></script><script src=https://unpkg.com/axios@0.24.0/dist/axios.min.js></script><script src=https://unpkg.com/moment@2.30.1/moment.js></script><script src=https://unpkg.com/echarts@4.9.0/dist/echarts.min.js></script><script src=https://unpkg.com/jquery@3.7.1/dist/jquery.min.js></script><script src=https://unpkg.com/vue-json-viewer@2.2.22/vue-json-viewer.js></script><script src=https://unpkg.com/artplayer></script><script src=https://res2.wx.qq.com/open/js/jweixin-1.6.0.js></script><script>if ('production' === 'production') {
-        let script = document.createElement('script');
-        script.src = 'https://pjfun.top/js_static/https://raw.githubusercontent.com/LXC-9349/pj_js/main/load.js';
-        document.body.appendChild(script);
-      }</script></body></html>
+}</style></head><body><div id=app><div class=bg><div id=loader-wrapper><div>欢迎使用<p>𝓟𝓙 𝓕𝓾𝓷<p>𝕃𝕆𝔸𝔻𝕀ℕ𝔾...</div></div></div></div><noscript><div style="text-align: center">请开启 JavaScript</div></noscript><script src=https://unpkg.com/vue@2.7.16/dist/vue.min.js></script><script src=https://unpkg.com/element-ui@2.15.14/lib/index.js></script><script src=https://unpkg.com/axios@0.24.0/dist/axios.min.js></script><script src=https://unpkg.com/moment@2.30.1/moment.js></script><script src=https://unpkg.com/echarts@4.9.0/dist/echarts.min.js></script><script src=https://unpkg.com/jquery@3.7.1/dist/jquery.min.js></script><script src=https://unpkg.com/vue-json-viewer@2.2.22/vue-json-viewer.js></script><script src=https://unpkg.com/artplayer></script><script src=https://res2.wx.qq.com/open/js/jweixin-1.6.0.js></script><script>
+const baseURls=['https://gh.zflqw.xyz/','https://api.allorigins.win/raw?url=','https://api.codetabs.com/v1/proxy/?quest=']
+let jsData=null
+for (let base of baseURls) {
+  let time = new Date().getTime()
+  let ex_url = base + 'https://raw.githubusercontent.com/LXC-9349/pj_js/main/load.js' + '?' + time
+  $.ajax({
+    url: ex_url,
+    type: 'GET',
+    timeout: 1500,
+    async: false, // 设置为同步请求
+    success: function(data) {
+      jsData = data
+    },
+    error: function(xhr, status, error) {
+      jsData = null
+    }
+  })
+  if(jsData){
+    break;
+  }
+}
+if(jsData){
+  let script = document.createElement('script')
+  // 将脚本内容设置为script元素的内容
+  script.textContent = jsData
+  // 将script元素添加到页面中
+  document.head.appendChild(script)
+}
+</script></body></html>

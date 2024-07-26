@@ -1,86 +1,128 @@
-<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=referrer content=never><meta name=renderer content=webkit><meta name=force-rendering content=webkit><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=icon href=https://cdn.jsdmirror.com/gh/LXC-9349/pj_js@main/favicon.ico><title>𝓟𝓙 𝓕𝓾𝓷 ❃❃</title><!--[if lt IE 11]><script>window.location.href = '/html/ie.html';</script><![endif]--><link rel=stylesheet href=https://unpkg.com/element-ui@2.15.14/lib/theme-chalk/index.css><link rel=stylesheet href=https://unpkg.com/vue-json-viewer@2.2.22/style.css><style>html,
-body,
-#app {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-#loader-wrapper {
-  height: 150px;
-  width: 150px;
-  margin: auto auto;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: linear-gradient(45deg, gold, deeppink);
-  animation: hue 3s infinite linear;
-}
-
-#loader-wrapper::before,
-#loader-wrapper::after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  bottom: -15px;
-  left: -15px;
-  right: -15px;
-  border: 5px solid #24acf2;
-  border-radius: 50%;
-  border-image: linear-gradient(45deg, gold, deeppink) 1;
-  clip-path: inset(0px round 10px);
-  animation: clippath 3s infinite linear;
-}
-
-#loader-wrapper::after {
-  animation: clippath 3s infinite -1.5s linear;
-}
-
-#loader-wrapper div {
-  color: white;
-  font-size: 20px;
-  text-align: center;
-}
-
-@keyframes hue {
-  0% {
-    filter: hue-rotate(0deg);
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=referrer content=never><meta name=renderer content=webkit><meta name=force-rendering content=webkit><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><link rel=icon href=https://cdn.jsdmirror.com/gh/LXC-9349/pj_js@main/favicon.ico><title>𝓟𝓙 𝓕𝓾𝓷 ❃❃</title><!--[if lt IE 11]><script>window.location.href = '/html/ie.html';</script><![endif]--><link rel=stylesheet href=https://unpkg.com/element-ui@2.15.14/lib/theme-chalk/index.css><link rel=stylesheet href=https://unpkg.com/vue-json-viewer@2.2.22/style.css><style>
+  html,
+  body,
+  #app {
+    height: 100%;
+    margin: 0;
+    padding: 0;
   }
-  100% {
-    filter: hue-rotate(360deg);
-  }
-}
 
-@keyframes clippath {
-  0% {
-    clip-path: inset(0 0 98% 0);
-    filter: hue-rotate(0deg);
+  #loader-wrapper {
+    height: 150px;
+    width: 150px;
+    margin: auto auto;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(45deg, gold, deeppink);
+    animation: hue 3s infinite linear, pulse 2s infinite ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   }
-  25% {
-    clip-path: inset(0 98% 0 0);
-  }
-  50% {
-    clip-path: inset(98% 0 0 0);
-  }
-  75% {
-    clip-path: inset(0 0 0 98%);
-  }
-  100% {
-    clip-path: inset(0 0 98% 0);
-    filter: hue-rotate(360deg);
-  }
-}
 
-.bg {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
-  background-color: #193c6d;
-  background-image: linear-gradient(313deg, #003073 0%, #1a3c7f 50%, #029797 100%);
-  animation: hue 3s linear infinite;
-}</style></head><body><div id=app><div class=bg><div id=loader-wrapper><div>欢迎使用<p>𝓟𝓙 𝓕𝓾𝓷<p>𝕃𝕆𝔸𝔻𝕀ℕ𝔾...</div></div></div></div><noscript><div style="text-align: center">请开启 JavaScript</div></noscript><script src=https://unpkg.com/vue@2.7.16/dist/vue.min.js></script><script src=https://unpkg.com/element-ui@2.15.14/lib/index.js></script><script src=https://unpkg.com/axios@0.24.0/dist/axios.min.js></script><script src=https://unpkg.com/moment@2.30.1/moment.js></script><script src=https://unpkg.com/echarts@4.9.0/dist/echarts.min.js></script><script src=https://unpkg.com/jquery@3.7.1/dist/jquery.min.js></script><script src=https://unpkg.com/vue-json-viewer@2.2.22/vue-json-viewer.js></script><script src=https://unpkg.com/artplayer></script><script src=https://res2.wx.qq.com/open/js/jweixin-1.6.0.js></script><script>
+  @keyframes pulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+
+  #loader-wrapper::before,
+  #loader-wrapper::after {
+    content: "";
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    border: 3px solid transparent;
+    border-top-color: #b6b6f7;
+    border-radius: 50%;
+    clip-path: inset(0px round 10px);
+    animation: clippath 3s infinite linear;
+  }
+
+  #loader-wrapper::after {
+    animation: clippath 3s infinite -1.5s linear;
+  }
+
+  #loader-wrapper div {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  @keyframes hue {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  @keyframes clippath {
+    0% {
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  .bg {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color: #193c6d;
+    background-image: linear-gradient(313deg, #003073 0%, #1a3c7f 50%, #029797 100%);
+    animation: hue 3s linear infinite;
+  }
+  .tzd_txt {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+  &::after {
+     content: attr(data-text);
+     position: absolute;
+     top: 0;
+     left: 0;
+     background-image: linear-gradient(313deg, #003073 0%, #1a3c7f 50%, #029797 100%);
+     background-clip: text;
+     -webkit-background-clip: text;
+     color: transparent;
+     clip-path: ellipse(60px 60px at 0% 50%);
+     animation: move_lit 8s ease-in-out infinite;
+   }
+  }
+
+  @keyframes move_lit {
+    50% {
+      clip-path: ellipse(60px 60px at 100% 50%);
+    }
+
+    100% {
+      clip-path: ellipse(60px 60px at 0% 50%);
+    }
+  }
+</style>
+</head>
+    <body>
+        <div id="app">
+            <div class="bg">
+                <div id="loader-wrapper">
+                    <div>欢迎使用<p/>𝓟𝓙 𝓕𝓾𝓷<p/><span class="tzd_txt" data-text="𝕃𝕆𝔸𝔻𝕀ℕ𝔾...">𝕃𝕆𝔸𝔻𝕀ℕ𝔾...</span></div>
+                </div>
+            </div>
+        </div><noscript><div style="text-align: center">请开启 JavaScript</div></noscript><script src=https://unpkg.com/vue@2.7.16/dist/vue.min.js></script><script src=https://unpkg.com/element-ui@2.15.14/lib/index.js></script><script src=https://unpkg.com/axios@0.24.0/dist/axios.min.js></script><script src=https://unpkg.com/moment@2.30.1/moment.js></script><script src=https://unpkg.com/echarts@4.9.0/dist/echarts.min.js></script><script src=https://unpkg.com/jquery@3.7.1/dist/jquery.min.js></script><script src=https://unpkg.com/vue-json-viewer@2.2.22/vue-json-viewer.js></script><script src=https://unpkg.com/artplayer></script><script src=https://res2.wx.qq.com/open/js/jweixin-1.6.0.js></script><script>
 const baseURls=['https://gh.zflqw.xyz/','https://api.allorigins.win/raw?url=','https://api.codetabs.com/v1/proxy/?quest=']
 let jsData=null
 for (let base of baseURls) {

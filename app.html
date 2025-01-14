@@ -59,10 +59,49 @@
             color: #736464;
             font-size: 18px;
           }
+          .modal-header {
+            background-color: #f8d7da;
+            color: #721c24;
+          }
+          .modal-content {
+            color:#333;
+            border-radius: 10px;
+          }
+          .modal-body {
+            font-size: 1.1rem;
+          }
+          .modal-footer {
+            display: flex;
+            justify-content: center;
+          }
+          .modal-body ul {
+            list-style-type: none;
+            padding-left: 0;
+          }
+          .modal-body p {
+            text-align: center;
+          }
+          .modal-body ul li {
+            margin: 10px 0;
+            font-size: 1rem;
+            text-align: left;
+          }
+          .modal-body ul li::before {
+            content: "✔️";
+            margin-right: 3px;
+          }
+          .modal-body code {
+            background-color: #f4f4f4;
+            padding: 5px 10px;
+            border-radius: 5px;
+          }
+          .modal-body i {
+            max-width: 50px;
+            margin: 0 5px;
+          }
         </style>
     </head>
     <body>
-        
         <!-- 头部区域 -->
         <div class="header">
             <h1 class="display-4">下载 pjfun 应用</h1>
@@ -116,7 +155,80 @@
             <p>&copy; 2024 pjfun.top |Simon 保留所有权利。</p>
         </footer>
         
+        <div class="modal fade" id="wechatModal" tabindex="-1" aria-labelledby="wechatModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="wechatModalLabel">
+                            <i class="fab fa-weixin"></i>
+                            注意！
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>为了获得更好的体验，请勿在微信中打开，可按照下列方式操作：</p>
+                        <ul>
+                            <li>点击右上角的<i class="fa fa-ellipsis-h" ></i>按钮，选择默认浏览器打开</li>
+                            <li onclick="copyText()">复制该链接：<input type="text" id="textToCopy" style="display: none"
+                                value="https://pjfun.top/app.html"><code>https://pjfun.top/app.html</code></li>
+                            <li>打开手机或电脑上的浏览器，访问该链接。</li>
+                        </ul>
+                        <p>感谢您的理解与支持！</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">我知道了</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="copyToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        链接已复制！
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        
+        
         <!-- 引入 Bootstrap 和 Font Awesome 脚本 -->
         <script src="https://unpkg.com/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        // 检查 User-Agent 是否包含 'MicroMessenger'，这是微信浏览器的标志
+        if (navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1) {
+          // 如果在微信中，显示提示
+          let myModal = new bootstrap.Modal(document.getElementById('wechatModal'), {
+            keyboard: false
+          });
+          myModal.show();
+        }
+        function copyText() {
+          let textField = document.getElementById('textToCopy');
+
+          // 选中输入框中的文本
+          textField.select();
+          textField.setSelectionRange(0, 99999); // For mobile devices
+
+          // 复制文本到剪贴板
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(textField.value).then(function() {
+              showToast();
+            }).catch(function(err) {
+              console.error('复制失败:', err);
+            });
+          } else {
+            // 如果不支持 clipboard API，使用 execCommand 方法作为备选
+            document.execCommand('copy');
+            showToast();
+          }
+        }
+        function showToast() {
+          let toastEl = document.getElementById('copyToast');
+          let toast = new bootstrap.Toast(toastEl);
+          toast.show(); // 显示 Toast 提示框
+        }
+        </script>
     </body>
 </html>

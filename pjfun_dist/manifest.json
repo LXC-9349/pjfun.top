@@ -1,0 +1,21 @@
+{
+    "name": "𝓟𝓙 𝓕𝓾𝓷 ❃❃",
+    "short_name": "𝓟𝓙 𝓕𝓾𝓷",
+    "theme_color": "rgb(57, 102, 142)",
+    "icons": [
+        {
+            "src": "img/icons/192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icons/512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "scope": "/"
+}

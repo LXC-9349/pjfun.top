@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>play</title>
+        <meta http-equiv="Content-language" content="zh-CN">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="referrer" content="never">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="pragma" content="no-cache">
+        <meta name="force-rendering" content="webkit" />
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/hls.js/8.0.0-beta.3/hls.min.js"></script>
+        <!--        <script src="https://unpkg.com/hls.js@1.5.11/dist/hls.min.js"></script>-->
+        <script src="//unpkg.com/artplayer@5.2.2/dist/artplayer.js"></script>
+        <script src="//unpkg.com/crypto-js@4.2.0/crypto-js.js"></script>
+        <script src="//unpkg.com/dlnajs@4.2.0/crypto-js.js"></script>
+        <style>
+          * {
+            padding: 0;
+            margin: 0;
+          }
+        </style>
+    </head>
+
+    <body onload="init()">
+        <div style="max-width: 100%;">
+            <div id="playF" class=" artplayer-app"></div>
+        </div>
+
+        <script>
+        function getQueryString (name,isName=false) {
+          let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
+          let r = window.location.search.substr(1).match(reg)
+          if (r != null) {
+            let valData = decodeURIComponent(r[ 2 ])
+            if (valData.startsWith('pj_top_url@')) {
+              let spl = valData.split('@')
+              let val = spl[ 1 ].trim()
+              val = decryptText(val.trim(), 'pjfunenc')
+              spl = val.split('@')
+              if(isName){
+                return spl.length>2?spl[ 2 ]:''
+              }
+              let time = spl[ 0 ].trim()
+              if (/^\d{13}$/.test(time)) {
+                if (Date.now() - parseInt(time) > 10000) {
+                  return null
+                } else {
+                  val = spl[ 1 ].trim()
+                  valData = decodeURIComponent(val)
+                }
+              }
+            }
+            return valData
+          }
+          return null
+        }
+
+        function decryptText (message, key) {
+          let keyHex = CryptoJS.enc.Utf8.parse(key)
+          let decrypted = CryptoJS.DES.decrypt({
+            ciphertext: CryptoJS.enc.Hex.parse(message)
+          }, keyHex, {
+            mode: CryptoJS.mode.ECB,
+            padding: CryptoJS.pad.Pkcs7
+          })
+          return decrypted.toString(CryptoJS.enc.Utf8)
+        }
+
+        let innerHeight = window.innerHeight
+        let element = document.getElementById('playF')
+        element.style.height = innerHeight + 'px'
+        element.style.maxWidth = '100%'
+        let url = getQueryString('url')
+        let pj_play_name = getQueryString('pj_play_name')||getQueryString('url',true)
+
+        if (url.length === 0) {
+          console.log('没有数据源')
+        }
+
+        function init () {
+
+          const extension = url.match(/\.[^.]*$/)[ 0 ].slice(1)
+          if (extension.startsWith('m3u8') || extension.startsWith('mp4') || url.includes('api.amemv.com')) {
+            function playM3u8 (video, url, art) {
+              if (Hls.isSupported()) {
+                if (art.hls) art.hls.destroy()
+                const hls = new Hls({
+                  maxBufferLength: 120,          // Maximum buffer length in seconds
+                  maxMaxBufferLength: 2400      // Maximum buffer length when back pressured
+                })
+                hls.loadSource(url)
+                hls.attachMedia(video)
+                art.hls = hls
+                art.on('destroy', () => hls.destroy())
+              } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+                video.src = url
+              } else {
+                art.notice.show = '不支持播放格式：m3u8'
+              }
+            }
+
+            function playMp4 (video, url, art) {
+              video.src = url
+            }
+
+            if (url.length > 0) {
+              Artplayer.DEGUG = false
+              Artplayer.LOG_VERSION = false
+              Artplayer.USE_RAF = true
+              Artplayer.RECONNECT_TIME_MAX = 10
+              Artplayer.PLAYBACK_RATE = [0.5, 0.75, 1, 1.5, 2, 2.5, 3, 4, 5]
+              let art = new Artplayer({
+                url: url,
+                container: '.artplayer-app',
+                autoplay: true,
+                autoSize: false,
+                autoPlayback: true,
+                airplay: true,
+                autoMini: false,
+                playbackRate: true,
+                setting: true,
+                aspectRatio: true,
+                screenshot: true,
+                hotkey: true,
+                pip: true,
+                mutex: true,
+                fullscreen: true,
+                fullscreenWeb: true,
+                backdrop: true,
+                miniProgressBar: true,
+                playsInline: true,
+                loop: false,
+                lock: true,
+                // fastForward: true,
+                autoOrientation: true,
+                customType: {
+                  m3u8: playM3u8,
+                  mp4: playMp4
+                },
+                whitelist: ['*'],
+                moreVideoAttr: {
+                  // proload: 'none'
+                },
+                controls: [
+                  {
+                    position: 'right',
+                    html: 'air',
+                    click: async function () {
+                      art.airplay()
+                    }
+                  }
+                ],
+                layers: [
+                  {
+                    name: 'play_name',
+                    html: '<span>'+pj_play_name+'</span>',
+                    style: {
+                      position: 'absolute',
+                      top: '2%',
+                      left: '5px'
+                    },
+                    mounted (el) {
+                      this.on('control', state => {
+                        el.style.opacity = state ? 1 : 0
+                      })
+                    }
+                  },
+                  {
+                    name: 'addTime',
+                    html: '<span>快进10秒</span>',
+                    style: {
+                      position: 'absolute',
+                      top: '70%',
+                      right: '30px'
+                    },
+                    click: function () {
+                      art.currentTime = art.currentTime + 10
+                    },
+                    mounted (el) {
+                      this.on('control', state => {
+                        el.style.opacity = state ? 1 : 0
+                      })
+                    }
+                  },
+                  {
+                    name: 'subTime',
+                    html: '<span>快退10秒</span>',
+                    style: {
+                      position: 'absolute',
+                      top: '70%',
+                      left: '30px'
+                    },
+                    click: function () {
+                      art.currentTime = art.currentTime - 10
+                    },
+                    mounted (el) {
+                      this.on('control', state => {
+                        el.style.opacity = state ? 1 : 0
+                      })
+                    }
+                  }
+                ]
+              })
+              art.on('resize', () => {
+                // art.autoHeight();
+              });
+              art.on('ready', async () => {
+                let attr1 = document.createAttribute('x5-playsinline')
+                attr1.value = true
+                art.video.attributes.setNamedItem(attr1)
+                let attr2 = document.createAttribute('x5-video-player-type')
+                attr2.value = 'h5-page'
+                art.video.attributes.setNamedItem(attr2)
+                let attr2a = document.createAttribute('webkit-playsinline')
+                attr2a.value = 'isiPhoneShowPlaysinline'
+                art.video.attributes.setNamedItem(attr2a)
+                let attr3 = document.createAttribute('x-webkit-airplay')
+                attr3.value = true
+                art.video.attributes.setNamedItem(attr3)
+                let attr4 = document.createAttribute('x5-video-player-fullscreen')
+                attr4.value = true
+                art.video.attributes.setNamedItem(attr4)
+                let attr5 = document.createAttribute('x5-video-ignore-metadata')
+                attr5.value = true
+                art.video.attributes.setNamedItem(attr5)
+                let attr8 = document.createAttribute('playsinline')
+                attr8.value = 'isiPhoneShowPlaysinline'
+                art.video.attributes.setNamedItem(attr8)
+                let attr9 = document.createAttribute('controlslist')
+                attr9.value = 'nodownload'
+                art.video.attributes.setNamedItem(attr9)
+                let attr11 = document.createAttribute('oncontextmenu')
+                attr11.value = 'return false'
+                art.video.attributes.setNamedItem(attr11)
+                let attr10 = document.createAttribute('t7-video-player-type')
+                attr10.value = 'inline'
+                art.video.attributes.setNamedItem(attr10)
+              })
+            }
+          } else {
+            window.location.href = url
+          }
+        }
+        </script>
+    </body>
+
+</html>

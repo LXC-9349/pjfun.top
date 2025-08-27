@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>play</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="referrer" content="never">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+      <link href="https://unpkg.com/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://unpkg.com/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+      <script src="https://cdn.bootcdn.net/ajax/libs/flv.js/1.6.2/flv.min.js"></script>
+    <script src="https://unpkg.com/artplayer@5.2.2/dist/artplayer.js"></script>
+  </head>
+
+  <body>
+    <div style="max-width: 100%;">
+      <div id="playF" class="container artplayer-app"></div>
+    </div>
+
+    <script>
+    let innerHeight=window.innerHeight
+    let element = document.getElementById('playF')
+    element.style.height = innerHeight + 'px'
+    element.style.maxWidth='100%'
+
+    let url = getQueryString('url')
+
+    let vd_time_key="art:"+url
+    function getQueryString (name) {
+      let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
+      let r = window.location.search.substr(1).match(reg)
+      if (r != null) {
+        return decodeURIComponent(r[ 2 ])
+      }
+      return null
+    }
+
+    function playFlv (video, url, art) {
+      if (flvjs.isSupported()) {
+        if (art.flv) art.flv.destroy()
+        const flv = flvjs.createPlayer({ type: 'flv', url })
+        flv.attachMediaElement(video)
+        flv.load()
+        art.flv = flv
+        art.on('destroy', () => flv.destroy())
+      } else {
+        art.notice.show = 'Unsupported playback format: flv'
+      }
+    }
+
+    if (url.length > 0 && flvjs.isSupported()) {
+      let art = new Artplayer({
+        container: '.artplayer-app',
+        url: url,
+        type: 'flv',
+        autoplay: true,
+        autoPlayback: true,
+        airplay: true,
+        autoMini: true,
+        playbackRate: true,
+        setting: true,
+        aspectRatio: true,
+        screenshot: true,
+        hotkey: true,
+        pip: true,
+        mutex: true,
+        fullscreen: true,
+        backdrop: true,
+        miniProgressBar: true,
+        playsInline: true,
+        loop: true,
+        fastForward: true,
+        autoOrientation: true,
+        customType: {
+          flv: playFlv,
+        }
+      })
+      art.on('ready', () => {
+        // art.autoHeight()
+        const time = sessionStorage.getItem(vd_time_key)
+        if(time){
+          art.seek = parseInt(time);
+        }
+        // console.info(art.hls)
+      })
+      art.on('seek', (currentTime) => {
+        //记录播放时间
+        sessionStorage.setItem(vd_time_key,currentTime+"")
+      });
+    }
+
+
+    </script>
+  </body>
+
+</html>

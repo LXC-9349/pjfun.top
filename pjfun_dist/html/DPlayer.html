@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DPlayer视频播放器</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://unpkg.com/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div style="max-width: 100%;">
+            <div id="dplayer"></div>
+        </div>
+        <script src="https://unpkg.com/hls.js@1.5.11/dist/hls.min.js"></script>
+        <script src="https://unpkg.com/bootstrap@5.3.1/dist/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/dplayer@1.27.1/dist/DPlayer.min.js"></script>
+        <script src="https://unpkg.com/jquery@3.7.1/dist/jquery.min.js"></script>
+        <script>
+        let url = getQueryString('url')
+        console.log(url)
+
+        function getQueryString (name) {
+          let reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
+          let r = window.location.search.substr(1).match(reg)
+          if (r != null) {
+            return decodeURIComponent(r[ 2 ])
+          }
+          return null
+        }
+
+        const dp = new DPlayer({
+          container: document.getElementById('dplayer'),
+          autoplay: true,
+          theme: '#FADFA3',
+          loop: true,
+          lang: 'zh-cn',
+          screenshot: true,
+          airplay: true,
+          chromecast: true,
+          hotkey: true,
+          preload: 'metadata',
+          playbackSpeed:[0.5, 0.75, 1, 1.25, 1.5, 2,2.5,3,3.5,4,5],
+          // 左上角展示的logo
+          // logo: 'https://cdn.jsdelivr.net/gh/FioraLove/Images/D:/data/imagesaaa.png',
+          volume: 0.5,
+          mutex: true,
+          video: {
+            url: url,
+            defaultQuality: 0,
+            // pic: 'https://cdn.jsdelivr.net/gh/FioraLove/Images/531-bigskin-1.jpg',
+            // thumbnails: 'https://cdn.jsdelivr.net/gh/FioraLove/Images/531-bigskin-1.jpg',
+            type: 'auto',
+            customType: {
+              m3u8: function (video, player) {
+                const hls = new Hls({
+                  maxBufferLength: 120,          // Maximum buffer length in seconds
+                  maxMaxBufferLength: 2400,      // Maximum buffer length when back pressured
+                });
+                hls.loadSource(video.src);
+                hls.attachMedia(video);
+              },
+            },
+          },
+          // pluginOptions: {
+          //   hls: {
+          //     // hls config
+          //     maxBufferLength: 120,          // Maximum buffer length in seconds
+          //     maxMaxBufferLength: 2400,      // Maximum buffer length when back pressured
+          //   },
+          // },
+          // 字幕
+          // subtitle: {
+          //   url: 'https://s-sh-17-dplayercdn.oss.dogecdn.com/hikarunara.vtt',
+          //   type: 'webvtt',
+          //   fontSize: '20px',
+          //   bottom: '8%',
+          //   color: '#b7daff',
+          // },
+          // 弹幕
+          // danmaku: {
+          //   /*
+          //   * 这是另一个博主搭建的弹幕池
+          //   * api: 'https://dplayer.moerats.com
+          //   * id: '9E2E3368B56CDBB45
+          //   * */
+          //   id: '9E2E3368B56CDBB4',
+          //   api: 'https://api.prprpr.me/dplayer/',
+          //   token: 'tokendemo',
+          //   maximum: 1000,
+          //   /*
+          //   * addition:其实可以直接读取一个由弹幕组成的json
+          //   * */
+          //   addition: ['https://s-sh-17-dplayercdn.oss.dogecdn.com/1678963.json'],
+          //   user: 'AhriLove',
+          //   bottom: '15%',
+          //   unlimited: true,
+          // },
+          // contextmenu: [
+          //   {
+          //     text: '二次作者',
+          //     link: 'https://ahriLove.top'
+          //   }
+          // ],
+          highlight: [
+            {
+              time: 20,
+              text: '这是第 20 秒'
+            },
+            {
+              time: 120,
+              text: '这是 2 分钟'
+            }
+          ]
+        })
+        // 快进秒数
+        // dp.seek(100);
+
+        // 提交一个新弹幕
+        // dp.danmaku.send(
+        //   {
+        //     text: 'dplayer is amazing',
+        //     color: '#b7daff',
+        //     type: 'right', // should be `top` `bottom` or `right`
+        //   },
+        //   function () {
+        //     console.log('success');
+        //   }
+        // );
+        // 实时绘制一个新弹幕
+        // dp.danmaku.draw({
+        //   text: '我是five，兄弟萌！！555555',
+        //   color: '#fff',
+        //   type: 'bottom',
+        // });
+        // 弹幕透明度
+        // dp.danmaku.opacity(0.5);
+        </script>
+    </body>
+</html>

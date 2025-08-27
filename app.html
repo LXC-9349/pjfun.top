@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>pjfun 应用下载</title>
+        <link rel=icon href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAARdEVYdFNvZnR3YXJlAFNuaXBhc3RlXRfO3QAACXJJREFUeF7tmmlMVtkZx/+sIpuKJrhVBYGigkvi0lHjOFNmjK0atzBmTLRNTNE2k3ScZPxQPzTpfDFtM0m1FUUdGmO0RkGNiCLMgFti3BEBWVUExbiwCfoK3J7nec+V+24CHuWVyfklN/ecc897l/99tnPBxxBA89b4yr3mLdECKqIFVEQLqIgWUBEtoCJaQEW0gIpoARXRAiqiBVREC6iIFlARLaAiWkBFtICKaAEV0QIqogVURAuoiBZQES2gIlpART64vwt3VFUDYntVeQrtZWXoLKXRIrQX8mFXJifAn/bxcfCNW4DAz6IQGB3Fh/oCLwtYjY7cPLzKzoKt9A0ivQX+k5cjaOv69y6mFwQk0VLx/PuMdyqYJ/yTNyHkn+vgJ/vvmr4VsOpHtHyVAlu3wgm3TJYuOR7wYyuKEnv7UWfY7enFVFXBJqy586CwZvshO5M3YVDW+xGxzwRsb6/A44ULEcgxzRWylKCFvwY+GYP6ujoEBQWhsbERMTExckbv6NixDI3fFckeEPhDOUKTZOcd0mdZ2P9ePnycxKM4FVqQg4iCHfA9uAUtv98I209+ePLkCZqbm/Hw4UM5s/f4ffZbe3KRdFaSlb57+kzA9DPVCJlMrQQEbt6B2qP/Q8XfvuAgb/u3cGueVQTbXzYgcepUREdHY+7cubh69Spvvaaq3NGN3xN9IuDZs2eRlLQBoVnliKjJRGjKp/AJDESg2FC1Cy8OyolE4kcOsYrm8LxeYsvOkC1CvDRR3rwPHGIguU59fT38/OyP0NnZiZCQEDx9+hRDhgzhsWfPniEiIgLPnz+Hr69df+d5L1++RFxcHMewBw8e4NatW1ixYgXPNSkpKUFAQADa/vtHjErvci/nWGXOo3ONGzcOQ4cO5XG65u3btzFw4EA+NnjwYBFn29HW1obwm9sR+m0Oz2PifoeWXV+iQYSFQYMGwWaz4dWrVwgNDeV7jo2N5fsn6PelpaV8ndbWVh4LDg5mbWge/caKgwX6+/v36G2TwAMGDJA9z9A8Hx8fLF++XI50QckhJsYPwcK1u1iGQKdAb58Xg46ODj6XCb0kEsI6xtRmItgqnqDj41+hQ7bdYX3m+/fvvzYgZ9xqQxZoUl5ebpw7d072PFNXV2fk5OTInnt27txpCGs1jh49KkfckWc0j44xnpjbxjw57hk6L5Gamsp7ByrTjEbr+Wj7TZrRLg974vTp04bwPEOIZ5w/f16OulJQUGDcuXNH9uw4WCC96draWhJVjrhnxIgRnCXJAjwxffp0dg+yVNq7RdRtnbJJGB9Nki3PJCQkYP/+/Vi9erUckYhY2vTxFqfEEYfgrd3Xf0lJScjNzUVWVhZmz54tR12ZN28eTp48KXt2XOpAEubIkSNch1GcILEo1owfP57jw5IlS3jeixcveB6ZO7VnzZrFcc+ExiiGkIDUpthoxkwiOzsbYbl/x8SDNXIkHjiajsFTHecJ6+DYJt485s+fz9e4cuUKZs6cycdramrw0z82ICnjNoJ4xGQinv4pBYVxLxxCiLAwLo/oOell0IsmKMa1tLRg7Nix3DehWEuY99TU1MS6mLHYwYWJzMxM2eoiPz9ftgzj8uXLsmUY169fly33iBs1RKzi9qFDh3hvcvfuXaP2D1Z3+9agme7m3bt3j9vixtnVXlOZZ7RtXGo5h7ktNR6cFeevrWX3tEL3JESXPcMoLi7m/aVLlwzxorhtRRgPb1ZEYpMtJxcmKMs6Q5nUJCwsDEI4bk+ZMgXbt2/ntjsiIyORnp7ObXrjVpqaStFeLjvE5Fh2NXrDVqhPWZagJHfs2DHRqoZtxybhsiloFcs2B7g4z8SJslyMHDmSLdQKWZn1GYVB8L6iosJt8qAw5RyqhOjsVYSLgOYBK1SymFRXVyM+Xrib4OLFi24zrJVJkyZBWBBnTSvt7TXwtQoYH80COl+f3Jc2k6mt1aj79HO0fJfhUij7J+8Qa94teBZSj9GjR/OY9d4JyubW802bNg2bN2/GqlWr5Igjztcn6Jl3797NbZcYKDIx1ztW6KLHjx/nksGMgXRS6ptvjWIUxUSKK2Q1zsI+fvwYw4YNkz2g4ca/0Lloq+yJh9+cg/CUKJfrNzQ08D7s8iG0fb/F/YeIyF/i4dd/RkVYKx49eoQ5c+ZgwoQJfN/0QswajyBPoHGqG61Q8hw1apTsdWFe33k+GQSXcuzIFtLS0mTrzZw5c8YQQsle9+zZs0e27BTuWucQtxpTq3jc8fpVRrGYV2+Z57gtNZpT8zyWKVSWWOMVQaXajRs3ZK8Lt2WRoLCwkDdnRCjhvYsLWzPgm6BqneJhTzh8+DDWrl0re3YC7t+TLTu+4+1LLYpz9EXa9s0yPP3F54j8a77DRwGTlqmfcKyjZaGnMoVWTBTbrNDzuRTfAk8LCJrrPH/btm1YvHgxt11cWGRBrFy5Uva6yMjIQHh4OIqKinhZRg9KtZNZ7gwfPpxFpTLD2YUvXLiAGTNmYN++fRgzZgyEBSC55D8YmC0niLVqsBAjAD+iZFUKRnblLFcoSWxdj+KmRly7do3djuKyWcOuWbNGTuxyP6rdaAlXJerOBQsWcFKYOHEiHzPZu3cvuykJTGUOLRtFBcClE5VvFMsJ+i2VdYmJidx3EZASA9V0VkQZwyfqDZS5qYakDEpiW+MQYfsmFi3WjwjdIYQL/no9gpLe/FFArJI4+9J1KU6/rtcUIVHJSGipZyYowsVfhb/LVhf0o95CBStBiYXd0oFq+ceiHkDC/ZCDCJFduxOPuHnzJhe/VKj3ZL3eU06cOMF7Oq8VFwFNg6T0TzUTYVbjvYFqxFOnTrFruT5Idbd/D6Ev1KEF5T0WzoRCSF5eHocb5y8nKtC3yQMHDmDRokVyxI6LC5eVlbFwJCDFNhKCljnWZVpPoFKBYo5zScS4XbcKpJsGCME8JYaeUFlZiaioqB4nxJ5A5RDFWiqPrLgI2Ce4CCgSQ80W9P6zqfd5d69IBbmM6494R8A++ntFX+AdAaNjHYvjwvI3fjH+kPkwXLgfowVU5AMRsAydVbLZz9AWqIiXkkj0z+bNeek5ouDP/+bR/9EurIjXLDBgSYJs92+8ZoHO/37WX/GeC0evQ1Cy3Qr9k79CkIf/Pv3Q8c7XmJ8ROokoogVURAuoiBZQES2gIlpARbSAimgBFdECKqIFVEQLqIgWUBEtoCJaQEW0gIpoARXRAioB/B8OHtkMLSd5cQAAAABJRU5ErkJggg==">
+        <link href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css">
+        <style>
+          /* 自定义样式 */
+          body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(330deg, rgb(249, 205, 249) 0%, rgb(126 198 198) 50%, rgb(134 127 198) 100%);
+            color: #fff;
+            text-align: center;
+          }
+          .header {
+            padding: 60px 20px;
+            animation: fadeInDown 1s;
+          }
+          @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+          }
+          .btn-glow {
+            color: #fff;
+            background: linear-gradient(168deg, rgb(249, 205, 249) 0%, rgb(126 198 198) 50%, rgb(134 127 198) 100%);
+            border: none;
+            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.5);
+            transition: all 0.3s ease;
+            padding: 10px 20px;
+          }
+          .btn-glow:hover {
+            box-shadow: 0 8px 20px rgba(255, 107, 107, 0.8);
+            transform: scale(1.05);
+          }
+          .features {
+            margin: 40px auto;
+          }
+          .features .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+          }
+          .download-section {
+            padding: 40px 20px;
+          }
+          .download-section .btn {
+            margin: 10px;
+            padding: 12px 20px;
+            font-size: 18px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(155, 125, 125, 0.5);
+          }
+          footer {
+            margin-top: 30vh;
+            width: 100%;
+            padding: 20px;
+            color: #736464;
+            font-size: 18px;
+          }
+          .modal-header {
+            background-color: #f8d7da;
+            color: #721c24;
+          }
+          .modal-content {
+            color:#333;
+            border-radius: 10px;
+          }
+          .modal-body {
+            font-size: 1.1rem;
+          }
+          .modal-footer {
+            display: flex;
+            justify-content: center;
+          }
+          .modal-body ul {
+            list-style-type: none;
+            padding-left: 0;
+          }
+          .modal-body p {
+            text-align: center;
+          }
+          .modal-body ul li {
+            margin: 10px 0;
+            font-size: 1rem;
+            text-align: left;
+          }
+          .modal-body ul li::before {
+            content: "✔️";
+            margin-right: 3px;
+          }
+          .modal-body code {
+            background-color: #f4f4f4;
+            padding: 5px 10px;
+            border-radius: 5px;
+          }
+          .modal-body i {
+            max-width: 50px;
+            margin: 0 5px;
+          }
+        </style>
+    </head>
+    <body>
+        <!-- 头部区域 -->
+        <div class="header">
+            <h1 class="display-4">下载 pjfun 应用</h1>
+            <p class="lead">app主要用于学习和研究，勿作他用。无缝连接多个平台，让生活更高效，了解更多https://pjfun.top</p>
+            <a href="#downloads" class="btn btn-glow">立即下载</a>
+        </div>
+        
+        <!-- 特性区域 -->
+        <div class="features container">
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="fas fa-mobile-alt icon"></i>
+                    <h4>移动端支持</h4>
+                    <p>兼容安卓和 iOS 系统。</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-desktop icon"></i>
+                    <h4>桌面端体验</h4>
+                    <p>提供 Windows 客户端，运行流畅。</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-sync icon"></i>
+                    <h4>设备同步</h4>
+                    <p>全终端与服务器同步数据。</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 下载区域 -->
+        <div id="downloads" class="download-section">
+            <h2>选择您的平台</h2>
+            <p>点击下方按钮，根据您的设备下载应用。提取码（1111）安装即可使用。</p>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="https://pjfun.top" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-chrome"></i> 使用网页版
+                </a>
+<!--                <a href="https://www.123684.com/s/Cvdijv-YY0Sv?提取码:1111" target="_blank" class="btn btn-primary">-->
+<!--                <a href="https://pan.quark.cn/s/9fc0dea6ad56?pwd=Z5yR" target="_blank" class="btn btn-primary">-->
+                <a href="https://share.feijipan.com/s/93NKwzWw?code=1111" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-windows"></i> 下载 Windows 版本
+                </a>
+<!--                <a href="https://www.123684.com/s/Cvdijv-FY0Sv?提取码:1111" class="btn btn-success">-->
+<!--                <a href="https://pan.quark.cn/s/34a647b7ec26?pwd=rtDq" class="btn btn-success">-->
+                <a href="https://share.feijipan.com/s/mNNKvXM7?code=1111" class="btn btn-success">
+                    <i class="fab fa-android"></i> 下载 Android 版本
+                </a>
+                <a href="#" class="btn btn-info">
+                    <i class="fab fa-apple"></i> 下载 iOS (开发中)
+                </a>
+            </div>
+        </div>
+        
+        <!-- 页脚 -->
+        <footer>
+            <p>&copy; 2024 pjfun.top |Simon 保留所有权利。</p>
+        </footer>
+        
+        <div class="modal fade" id="wechatModal" tabindex="-1" aria-labelledby="wechatModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="wechatModalLabel">
+                            <i class="fab fa-weixin"></i>
+                            注意！
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>为了获得更好的体验，请勿在微信中打开，可按照下列方式操作：</p>
+                        <ul>
+                            <li>点击右上角的<i class="fa fa-ellipsis-h" ></i>按钮，选择默认浏览器打开</li>
+                            <li onclick="copyText()">复制该链接：<input type="text" id="textToCopy" style="display: none"
+                                value="https://pjfun.top/app.html"><code>https://pjfun.top/app.html</code></li>
+                            <li>打开手机或电脑上的浏览器，访问该链接。</li>
+                        </ul>
+                        <p>感谢您的理解与支持！</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">我知道了</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="copyToast" class="toast align-items-center text-bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="d-flex">
+                    <div class="toast-body">
+                        链接已复制！
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- 引入 Bootstrap 和 Font Awesome 脚本 -->
+        <script src="https://unpkg.com/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+        // 检查 User-Agent 是否包含 'MicroMessenger'，这是微信浏览器的标志
+        if (navigator.userAgent.toLowerCase().indexOf('micromessenger') !== -1) {
+          // 如果在微信中，显示提示
+          let myModal = new bootstrap.Modal(document.getElementById('wechatModal'), {
+            keyboard: false
+          });
+          myModal.show();
+        }
+        function copyText() {
+          let textField = document.getElementById('textToCopy');
+
+          // 选中输入框中的文本
+          textField.select();
+          textField.setSelectionRange(0, 99999); // For mobile devices
+
+          // 复制文本到剪贴板
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(textField.value).then(function() {
+              showToast();
+            }).catch(function(err) {
+              console.error('复制失败:', err);
+            });
+          } else {
+            // 如果不支持 clipboard API，使用 execCommand 方法作为备选
+            document.execCommand('copy');
+            showToast();
+          }
+        }
+        function showToast() {
+          let toastEl = document.getElementById('copyToast');
+          let toast = new bootstrap.Toast(toastEl);
+          toast.show(); // 显示 Toast 提示框
+        }
+        </script>
+    </body>
+</html>

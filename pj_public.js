@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const timeoutPromise = new Promise((_, reject) => {
     timeoutId = setTimeout(() => {
       console.warn('Resource loading exceeded 15 seconds, reloading page')
-      window.location.reload(true)
+      window.location.reload()
     }, timeoutDuration)
   })
   // 加载所有资源的 Promise
@@ -143,7 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'Vue app not loaded successfully, reloading page in 2 seconds')
           // 2秒后自动刷新页面
           setTimeout(() => {
-            window.location.reload(true)
+            window.location.reload()
           }, 2000)
         }
       }, 2000)

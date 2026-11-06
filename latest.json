@@ -1,10 +1,10 @@
 {
   "version": "1.0.13",
   "notes": "PJfun Desktop v1.0.13",
-  "pub_date": "2026-11-06T08:05:03.818Z",
+  "pub_date": "2026-11-06T08:30:00.331Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSHdrWmZxVnRRYzNhcVNBT0d0QXZvYndtdjBMeFQrTE8wQWhESkdHeno1WUVPQjlSbCtQTHlXOGpsSlIxSituNEVIVVhhb0dPYXNPZjc1L0UrS3Y3elFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTUyMjc2CWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMTNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xMwp2cktVd2xUczRzdFNoU2MyN3JSUGM5cVJBelVHbEc1Q04wYk5tZTBNY25DUW5kWGVYeFpLVXdBVUpsT2pXZzVjN1U2Vk1JQ2hwQkJFZC8vVWEwelNEUT09Cg==",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSHpTbE51VG93eDRBYWVrRytiVUlOcnJuTU52R3hBQTJGaTlmcERaeFllbFRXai9leis3aTl6b05pZldxZUZ2UG5PeGhBRXRhTzBXOWJrU0JGYWVxUXd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTUzNzg3CWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMTNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xMwpBY05MM3FXS20xQ3RmTkJobGtESFlTMXZYZ2VWa1g5SnVQUnpsQUhNbDRoWU50dFMxZk5Fc1NRZUwxaHh4L2Y0ZnkwTmcwMFdzaTBGaGxPcmtiajdBdz09Cg==",
       "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.13/pjfun-desktop_1.0.13_x64-setup.exe"
     }
   }

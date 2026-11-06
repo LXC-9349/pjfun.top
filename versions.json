@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T08:30:00.331Z",
+  "generatedAt": "2026-11-06T09:00:51.054Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
     "version": "1.0.13",
@@ -24,13 +24,28 @@
     "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.13/latest.json",
     "updaterManifest": "https://raw.githubusercontent.com/LXC-9349/pjfun.top/main/latest.json"
   },
-  "android": null,
+  "android": {
+    "version": "1.0.13",
+    "tag": "android-v1.0.13",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/android-v1.0.13",
+    "files": [
+      {
+        "name": "pjfun-android_1.0.13.apk",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/android-v1.0.13/pjfun-android_1.0.13.apk",
+        "size": 52123800,
+        "sha256": "c63f69804500492142d3fbe7101fd51073cf35d7321124261cc37773b1b57d0f",
+        "builtAt": "2026-11-06T08:59:10.783Z"
+      }
+    ],
+    "pkg": "top.pjfun",
+    "versionCode": "10013"
+  },
   "ios": {
     "distribution": "testflight"
   },
   "source": {
     "repo": "LXC-9349/web-portal",
-    "commit": "1d866f11b06d307a237ba5529ccf339a097d8094",
+    "commit": "60c15c494ee1ef9670bf3dde4397b7e7bb6df5aa",
     "branch": "3.0",
     "dirty": false
   }

@@ -1,6 +1,11 @@
 {
-  "version": "0.0.0",
-  "notes": "尚未发布过桌面端更新",
-  "pub_date": "2026-11-06T07:53:36.244Z",
-  "platforms": {}
+  "version": "1.0.13",
+  "notes": "PJfun Desktop v1.0.13",
+  "pub_date": "2026-11-06T08:05:03.818Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSHdrWmZxVnRRYzNhcVNBT0d0QXZvYndtdjBMeFQrTE8wQWhESkdHeno1WUVPQjlSbCtQTHlXOGpsSlIxSituNEVIVVhhb0dPYXNPZjc1L0UrS3Y3elFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTUyMjc2CWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMTNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xMwp2cktVd2xUczRzdFNoU2MyN3JSUGM5cVJBelVHbEc1Q04wYk5tZTBNY25DUW5kWGVYeFpLVXdBVUpsT2pXZzVjN1U2Vk1JQ2hwQkJFZC8vVWEwelNEUT09Cg==",
+      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.13/pjfun-desktop_1.0.13_x64-setup.exe"
+    }
+  }
 }

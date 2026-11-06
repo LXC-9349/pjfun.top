@@ -1,9 +1,29 @@
 {
-  "generatedAt": "2026-11-06T07:53:36.244Z",
+  "generatedAt": "2026-11-06T08:05:03.818Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
-  "desktop": null,
+  "desktop": {
+    "version": "1.0.13",
+    "tag": "desktop-v1.0.13",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/desktop-v1.0.13",
+    "files": [
+      {
+        "name": "pjfun-desktop_1.0.13_x64-setup.exe",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.13/pjfun-desktop_1.0.13_x64-setup.exe",
+        "size": 39612803,
+        "sha256": "f91fb5e43dff9f03e86b9ad1f686c9361e5f2135b3dc9433cd387425eac6c69f",
+        "builtAt": "2026-11-06T08:04:36.513Z"
+      }
+    ],
+    "updaterManifest": "https://raw.githubusercontent.com/LXC-9349/pjfun.top/main/latest.json"
+  },
   "android": null,
   "ios": {
     "distribution": "testflight"
+  },
+  "source": {
+    "repo": "LXC-9349/web-portal",
+    "commit": "eef5a63e85bd0cae7bd2419fc8d46964c0d37c64",
+    "branch": "3.0",
+    "dirty": false
   }
 }

@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-11-06T09:31:59.540Z",
+  "generatedAt": "2026-11-06T09:36:18.890Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
-    "version": "1.0.13",
-    "tag": "desktop-v1.0.13",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/desktop-v1.0.13",
+    "version": "1.0.14",
+    "tag": "desktop-v1.0.14",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/desktop-v1.0.14",
     "files": [
       {
-        "name": "pjfun-desktop_1.0.13_x64-setup.exe",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.13/pjfun-desktop_1.0.13_x64-setup.exe",
-        "size": 39617834,
-        "sha256": "68ec1f61bebf45ba56df77fdf93f7036f82f650c1cf783491b5e5d3a04f39ff8",
-        "builtAt": "2026-11-06T08:29:47.025Z"
+        "name": "pjfun-desktop_1.0.14_x64-setup.exe",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.14/pjfun-desktop_1.0.14_x64-setup.exe",
+        "size": 39616965,
+        "sha256": "7ac02fce9c40341661d2c0602bf21b1ffe84e612b42d05f38d6db565ad5b89cf",
+        "builtAt": "2026-11-06T09:35:53.622Z"
       },
       {
         "name": "latest.json",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.13/latest.json",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.14/latest.json",
         "size": 749,
-        "sha256": "38f9614fe839dd898bfb9b60a3ce4ef2e792e8221781729ad247678e06a4660e",
-        "builtAt": "2026-11-06T08:30:00.334Z"
+        "sha256": "8281c5a55d64d9cfa113850d4b556db410f58306df5581c54b8ecff78f788be9",
+        "builtAt": "2026-11-06T09:36:18.891Z"
       }
     ],
-    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.13/latest.json",
+    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.14/latest.json",
     "updaterManifest": "https://raw.githubusercontent.com/LXC-9349/pjfun.top/main/latest.json"
   },
   "android": {

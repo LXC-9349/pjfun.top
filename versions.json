@@ -1,27 +1,27 @@
 {
-  "generatedAt": "2026-11-10T03:29:26.369Z",
+  "generatedAt": "2026-11-10T04:03:21.043Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
-    "version": "1.0.17",
-    "tag": "desktop-v1.0.17",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/desktop-v1.0.17",
+    "version": "1.0.18",
+    "tag": "desktop-v1.0.18",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/desktop-v1.0.18",
     "files": [
       {
-        "name": "pjfun-desktop_1.0.17_x64-setup.exe",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.17/pjfun-desktop_1.0.17_x64-setup.exe",
-        "size": 39683420,
-        "sha256": "cb076de45298829d2402362cb99ba471653c38f8944ae5e4ffe474d3575ff169",
-        "builtAt": "2026-11-10T03:24:30.781Z"
+        "name": "pjfun-desktop_1.0.18_x64-setup.exe",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.18/pjfun-desktop_1.0.18_x64-setup.exe",
+        "size": 39681383,
+        "sha256": "c9d0715d29285b2ccfa93766109b6339600d9878dc6b6dc6d82bc9f94d160add",
+        "builtAt": "2026-11-10T04:01:07.563Z"
       },
       {
         "name": "latest.json",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.17/latest.json",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.18/latest.json",
         "size": 749,
-        "sha256": "7aa429aa0b99ffa1d8705762aeaadb5a96f369c818500e47015ef180c52edda9",
-        "builtAt": "2026-11-10T03:29:26.372Z"
+        "sha256": "31ac0c869f4159e16de379c875c6b9916375f65124e61f592606b601dd54f1a2",
+        "builtAt": "2026-11-10T04:03:21.047Z"
       }
     ],
-    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.17/latest.json",
+    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.18/latest.json",
     "updaterManifest": "https://raw.githubusercontent.com/LXC-9349/pjfun.top/main/latest.json"
   },
   "android": {
@@ -45,7 +45,7 @@
   },
   "source": {
     "repo": "LXC-9349/web-portal",
-    "commit": "ced5e35253fc80e1033fb8da0150eaf60e1d5b8d",
+    "commit": "65c843ebd2bca8c2763f53866ca27a376e9cc468",
     "branch": "3.0",
     "dirty": false
   }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T04:03:21.043Z",
+  "generatedAt": "2026-11-10T07:41:02.862Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
     "version": "1.0.18",
@@ -9,16 +9,16 @@
       {
         "name": "pjfun-desktop_1.0.18_x64-setup.exe",
         "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.18/pjfun-desktop_1.0.18_x64-setup.exe",
-        "size": 39681383,
-        "sha256": "c9d0715d29285b2ccfa93766109b6339600d9878dc6b6dc6d82bc9f94d160add",
-        "builtAt": "2026-11-10T04:01:07.563Z"
+        "size": 39688234,
+        "sha256": "38aa02db1c55c15e538015a9d1cb216dcb741370b2658e4566573b45328fbbe0",
+        "builtAt": "2026-11-10T07:36:21.552Z"
       },
       {
         "name": "latest.json",
         "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.18/latest.json",
         "size": 749,
-        "sha256": "31ac0c869f4159e16de379c875c6b9916375f65124e61f592606b601dd54f1a2",
-        "builtAt": "2026-11-10T04:03:21.047Z"
+        "sha256": "57a68b333ceb48422fa86f73081138029fae481a0551d3c5ce8df3519ef32df9",
+        "builtAt": "2026-11-10T07:41:02.873Z"
       }
     ],
     "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.18/latest.json",
@@ -45,7 +45,7 @@
   },
   "source": {
     "repo": "LXC-9349/web-portal",
-    "commit": "65c843ebd2bca8c2763f53866ca27a376e9cc468",
+    "commit": "9e41bcc45386e21c79447c9693788b684d20842d",
     "branch": "3.0",
     "dirty": false
   }

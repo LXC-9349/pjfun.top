@@ -1,51 +1,51 @@
 {
-  "generatedAt": "2026-11-11T04:03:48.206Z",
+  "generatedAt": "2026-11-11T04:18:12.882Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
     "version": "1.0.20",
-    "tag": "desktop-v1.0.20",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/desktop-v1.0.20",
+    "tag": "v1.0.20",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.20",
     "files": [
       {
         "name": "pjfun-desktop_1.0.20_x64-setup.exe",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64-setup.exe",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_x64-setup.exe",
         "size": 39667313,
         "sha256": "771580afd89231451e45df56796b979c43affa079de5608a6c8fe2523da8dfac",
         "builtAt": "2026-11-11T03:41:47.883Z"
       },
       {
         "name": "pjfun-desktop_1.0.20_x64.msi",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64.msi",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_x64.msi",
         "size": 42156032,
         "sha256": "5cbb16f148c8e9de2bb69d71fb89a8254e85bf336a97909862ca39334fe3dbb2",
         "builtAt": "2026-11-11T03:42:08.873Z"
       },
       {
         "name": "pjfun-desktop_1.0.20_x64-portable.zip",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64-portable.zip",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_x64-portable.zip",
         "size": 39610201,
         "sha256": "34ee4e9d5a6b17e745c918f924aae8bed53fc4217122c62d912b5e92213e350d",
         "builtAt": "2026-11-11T03:44:20.507Z"
       }
     ],
-    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/latest.json",
+    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/latest.json",
     "updaterManifest": "https://raw.githubusercontent.com/LXC-9349/pjfun.top/main/latest.json"
   },
   "android": {
     "version": "1.0.20",
-    "tag": "android-v1.0.20",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/android-v1.0.20",
+    "tag": "v1.0.20",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.20",
     "files": [
       {
         "name": "pjfun-android_1.0.20.apk",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/android-v1.0.20/pjfun-android_1.0.20.apk",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-android_1.0.20.apk",
         "size": 52148539,
         "sha256": "4925a4c444f28e6582f171d45e24138d439968729e04a272320954dcf643253b",
         "builtAt": "2026-11-11T03:56:22.980Z"
       },
       {
         "name": "pjfun-android_1.0.20.aab",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/android-v1.0.20/pjfun-android_1.0.20.aab",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-android_1.0.20.aab",
         "size": 53499710,
         "sha256": "f05142fb0dd40065bcdd885c2e39479d59efe4ab377567dc48bc8c4e413ed6b9",
         "builtAt": "2026-11-11T03:55:44.965Z"
@@ -57,27 +57,21 @@
   "ios": {
     "distribution": "testflight"
   },
-  "source": {
-    "repo": "LXC-9349/web-portal",
-    "commit": "8b283571d948dbc0708e5c49e89aaf4cb91fc2a0",
-    "branch": "3.0",
-    "dirty": false
-  },
   "linux": {
     "version": "1.0.20",
-    "tag": "linux-v1.0.20",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/linux-v1.0.20",
+    "tag": "v1.0.20",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.20",
     "files": [
       {
         "name": "pjfun-desktop_1.0.20_amd64.deb",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/linux-v1.0.20/pjfun-desktop_1.0.20_amd64.deb",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_amd64.deb",
         "size": 64578862,
         "sha256": "01f70558cbb0d3b5cd70e88a6a8f92fe2d8ad0c8b3426b61853619e02fce5ec6",
         "builtAt": "2026-11-11T04:00:20.800Z"
       },
       {
         "name": "pjfun-desktop_1.0.20_amd64.AppImage",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/linux-v1.0.20/pjfun-desktop_1.0.20_amd64.AppImage",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_amd64.AppImage",
         "size": 142858744,
         "sha256": "ef4d91c0669989934c6d37e7c1536b2dc2ec7efafd6a281124369e0a66a439b3",
         "builtAt": "2026-11-11T04:00:22.958Z"

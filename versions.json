@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T02:50:46.510Z",
+  "generatedAt": "2026-11-11T03:58:15.324Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
     "version": "1.0.20",
@@ -9,16 +9,30 @@
       {
         "name": "pjfun-desktop_1.0.20_x64-setup.exe",
         "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64-setup.exe",
-        "size": 39667900,
-        "sha256": "4738550288442d3ce96bb722551c1cc506dc58de61bdb12d1abc6fbd733a576c",
-        "builtAt": "2026-11-11T02:43:24.519Z"
+        "size": 39667313,
+        "sha256": "771580afd89231451e45df56796b979c43affa079de5608a6c8fe2523da8dfac",
+        "builtAt": "2026-11-11T03:41:47.883Z"
+      },
+      {
+        "name": "pjfun-desktop_1.0.20_x64.msi",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64.msi",
+        "size": 42156032,
+        "sha256": "5cbb16f148c8e9de2bb69d71fb89a8254e85bf336a97909862ca39334fe3dbb2",
+        "builtAt": "2026-11-11T03:42:08.873Z"
+      },
+      {
+        "name": "pjfun-desktop_1.0.20_x64-portable.zip",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64-portable.zip",
+        "size": 39610201,
+        "sha256": "34ee4e9d5a6b17e745c918f924aae8bed53fc4217122c62d912b5e92213e350d",
+        "builtAt": "2026-11-11T03:44:20.507Z"
       },
       {
         "name": "latest.json",
         "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/latest.json",
         "size": 749,
-        "sha256": "ec73150e71145db9b4198d5d7c3549511651c0826ca4eb218a96a066b4177851",
-        "builtAt": "2026-11-11T02:50:46.513Z"
+        "sha256": "8ca231a7a62ee3fd7141bc5aee30ee9aa165eeacfd8a80de7860e452837d56c3",
+        "builtAt": "2026-11-11T03:58:15.330Z"
       }
     ],
     "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/latest.json",
@@ -45,7 +59,7 @@
   },
   "source": {
     "repo": "LXC-9349/web-portal",
-    "commit": "b47e6c3fd794705bfbebcdf2ef66159886c29aa0",
+    "commit": "40a9bbf8b9fdea818d0f46c04986167bd3d303a8",
     "branch": "3.0",
     "dirty": false
   }

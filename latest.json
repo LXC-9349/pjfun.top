@@ -1,11 +1,11 @@
 {
-  "version": "1.0.19",
-  "notes": "PJfun Desktop v1.0.19",
-  "pub_date": "2026-11-10T08:36:04.921Z",
+  "version": "1.0.20",
+  "notes": "PJfun Desktop v1.0.20",
+  "pub_date": "2026-11-11T02:50:46.510Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSC9IUTFTN0ZHK2ZiNkM1ZlU0NEdRT0YvZEJXVjM3dnJtOGdhNWhUOHV4NE5ZL3g1TTZWNWxKYngraHZrQkFISjRaZENGYXBaQnlxRFQ2bXhDR1FRd2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0Mjk5NDA3CWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMTlfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4xOQpWSjQrd2l5czFPdVRVSUI2RGFFWjVVcy8vUmtOSS9LbTNWanB1Q1VxS0xLRVBLb1crZFNMS3B2aFFFN0o1emhSKy8rZWRkQ0lzb1BpK0VGWi96ZHVCdz09Cg==",
-      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.19/pjfun-desktop_1.0.19_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSDk3SlErUE54aWhTRFkyRXVFZUI2bDdISmcvcnA3aFlXMU5iR1JhR2lzVGF2RDZES1F1c2t2MFNDd3RQenF6NEhvdllZSlloUVJxSUhLVHFTVHZGVUFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzY1MDA0CWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yMAptREtDZTlHYWgzM25PWEFQckZBTWpseENGejRFY1VUeTJpeUJOYjIzWUIzODhJbnRtMmYyRkhKYndDZm1uSnlxVzcxVlUrSnFFLzdDQ0dlbGN4N1JBQT09Cg==",
+      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64-setup.exe"
     }
   }
 }

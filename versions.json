@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T03:58:15.324Z",
+  "generatedAt": "2026-11-11T03:58:55.986Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
     "version": "1.0.20",
@@ -39,20 +39,27 @@
     "updaterManifest": "https://raw.githubusercontent.com/LXC-9349/pjfun.top/main/latest.json"
   },
   "android": {
-    "version": "1.0.14",
-    "tag": "android-v1.0.14",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/android-v1.0.14",
+    "version": "1.0.20",
+    "tag": "android-v1.0.20",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/android-v1.0.20",
     "files": [
       {
-        "name": "pjfun-android_1.0.14.apk",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/android-v1.0.14/pjfun-android_1.0.14.apk",
-        "size": 52123800,
-        "sha256": "f644903d25c48f6fd9d85e81bfdc948d96b04bcd8b783e2c90e733d81b864f36",
-        "builtAt": "2026-11-06T09:30:50.818Z"
+        "name": "pjfun-android_1.0.20.apk",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/android-v1.0.20/pjfun-android_1.0.20.apk",
+        "size": 52148539,
+        "sha256": "4925a4c444f28e6582f171d45e24138d439968729e04a272320954dcf643253b",
+        "builtAt": "2026-11-11T03:56:22.980Z"
+      },
+      {
+        "name": "pjfun-android_1.0.20.aab",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/android-v1.0.20/pjfun-android_1.0.20.aab",
+        "size": 53499710,
+        "sha256": "f05142fb0dd40065bcdd885c2e39479d59efe4ab377567dc48bc8c4e413ed6b9",
+        "builtAt": "2026-11-11T03:55:44.965Z"
       }
     ],
     "pkg": "top.pjfun",
-    "versionCode": "10014"
+    "versionCode": "10020"
   },
   "ios": {
     "distribution": "testflight"

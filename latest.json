@@ -1,11 +1,11 @@
 {
   "version": "1.0.20",
-  "notes": "PJfun Desktop v1.0.20",
-  "pub_date": "2026-11-11T04:01:45.145Z",
+  "notes": "PJfun 1.0.20",
+  "pub_date": "2026-11-11T04:18:12.882Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSDZRRXNrODc2UjNmMU9YQ3VWN3FOT1R0RjlTa2FTdDUvck5xZVkwVExqWFpvRGtkeE1WdHRnc2FUa1ZLd0FqN25odzRlQm5iYVBDM1l5ZEtQaVQ1bUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MzY4NTUyCWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yMApWMnNVcnRDWEpxMWJac3RZME1QNFM5Kys1MEZ2Slp0cDRyYUcydjkxQXVMTjlobmhITU92UzlGYkE4SzBlM3lOVHlaWHN1ZVd0eDROYk1UOEVpZW5Edz09Cg==",
-      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/pjfun-desktop_1.0.20_x64-setup.exe"
+      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_x64-setup.exe"
     }
   }
 }

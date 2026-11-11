@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T03:59:37.291Z",
+  "generatedAt": "2026-11-11T04:01:45.145Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
     "version": "1.0.20",
@@ -26,13 +26,6 @@
         "size": 39610201,
         "sha256": "34ee4e9d5a6b17e745c918f924aae8bed53fc4217122c62d912b5e92213e350d",
         "builtAt": "2026-11-11T03:44:20.507Z"
-      },
-      {
-        "name": "latest.json",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/latest.json",
-        "size": 749,
-        "sha256": "8ca231a7a62ee3fd7141bc5aee30ee9aa165eeacfd8a80de7860e452837d56c3",
-        "builtAt": "2026-11-11T03:58:15.330Z"
       }
     ],
     "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/desktop-v1.0.20/latest.json",
@@ -66,7 +59,7 @@
   },
   "source": {
     "repo": "LXC-9349/web-portal",
-    "commit": "40a9bbf8b9fdea818d0f46c04986167bd3d303a8",
+    "commit": "8b283571d948dbc0708e5c49e89aaf4cb91fc2a0",
     "branch": "3.0",
     "dirty": false
   },

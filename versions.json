@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T03:58:55.986Z",
+  "generatedAt": "2026-11-11T03:59:37.291Z",
   "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
   "desktop": {
     "version": "1.0.20",
@@ -69,5 +69,31 @@
     "commit": "40a9bbf8b9fdea818d0f46c04986167bd3d303a8",
     "branch": "3.0",
     "dirty": false
+  },
+  "linux": {
+    "version": "1.0.20",
+    "tag": "linux-v1.0.20",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/linux-v1.0.20",
+    "files": [
+      {
+        "name": "pjfun-desktop_1.0.20_amd64.deb",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/linux-v1.0.20/pjfun-desktop_1.0.20_amd64.deb",
+        "size": 64578826,
+        "sha256": "67c3f4e3e3e964432cd0391e1bf69264a9e591899cd7e8385ebcfbb1dc418c03",
+        "builtAt": "2026-11-11T03:48:42.868Z"
+      },
+      {
+        "name": "pjfun-desktop_1.0.20_amd64.AppImage",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/linux-v1.0.20/pjfun-desktop_1.0.20_amd64.AppImage",
+        "size": 142854648,
+        "sha256": "be0e877a1640bdb4f3f1a1a994225ca01151b36c9e09f4c11dfd7918fa93c687",
+        "builtAt": "2026-11-11T03:48:45.318Z"
+      }
+    ],
+    "formats": [
+      "deb",
+      "appimage"
+    ],
+    "arch": "x86_64"
   }
 }

@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-11T04:18:12.882Z",
-  "note": "由本地发布脚本 pnpm publish:desktop / publish:android 维护",
+  "note": "由本地发布脚本 pnpm publish:release 维护；一个版本号对应一个包含全平台产物的 release。",
   "desktop": {
     "version": "1.0.20",
     "tag": "v1.0.20",

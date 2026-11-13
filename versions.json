@@ -1,80 +1,80 @@
 {
-  "generatedAt": "2026-11-11T04:18:12.882Z",
+  "generatedAt": "2026-11-13T09:42:52.840Z",
   "note": "由本地发布脚本 pnpm publish:release 维护；一个版本号对应一个包含全平台产物的 release。",
   "desktop": {
-    "version": "1.0.20",
-    "tag": "v1.0.20",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.20",
+    "version": "1.0.21",
+    "tag": "v1.0.21",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.21",
     "files": [
       {
-        "name": "pjfun-desktop_1.0.20_x64-setup.exe",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_x64-setup.exe",
-        "size": 39667313,
-        "sha256": "771580afd89231451e45df56796b979c43affa079de5608a6c8fe2523da8dfac",
-        "builtAt": "2026-11-11T03:41:47.883Z"
+        "name": "pjfun-desktop_1.0.21_x64-setup.exe",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-desktop_1.0.21_x64-setup.exe",
+        "size": 39626876,
+        "sha256": "28b5501458549a125ec910606cea78bfecd4406eaf9c9fb0e110ad4edd01ad7d",
+        "builtAt": "2026-11-13T09:22:38.151Z"
       },
       {
-        "name": "pjfun-desktop_1.0.20_x64.msi",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_x64.msi",
-        "size": 42156032,
-        "sha256": "5cbb16f148c8e9de2bb69d71fb89a8254e85bf336a97909862ca39334fe3dbb2",
-        "builtAt": "2026-11-11T03:42:08.873Z"
+        "name": "pjfun-desktop_1.0.21_x64.msi",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-desktop_1.0.21_x64.msi",
+        "size": 42115072,
+        "sha256": "00f79edfb5f1985b6f8ed5616f04d16c1fa25ea0cfcc288ac61c43dd3c638953",
+        "builtAt": "2026-11-13T09:22:47.160Z"
       },
       {
-        "name": "pjfun-desktop_1.0.20_x64-portable.zip",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_x64-portable.zip",
-        "size": 39610201,
-        "sha256": "34ee4e9d5a6b17e745c918f924aae8bed53fc4217122c62d912b5e92213e350d",
-        "builtAt": "2026-11-11T03:44:20.507Z"
+        "name": "pjfun-desktop_1.0.21_x64-portable.zip",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-desktop_1.0.21_x64-portable.zip",
+        "size": 17892113,
+        "sha256": "77596f1f3085d2091865297e09b733cd97c37d77ab7b3255c084536b711b4342",
+        "builtAt": "2026-11-13T09:23:02.959Z"
       }
     ],
-    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/latest.json",
+    "manifestUrl": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/latest.json",
     "updaterManifest": "https://raw.githubusercontent.com/LXC-9349/pjfun.top/main/latest.json"
   },
   "android": {
-    "version": "1.0.20",
-    "tag": "v1.0.20",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.20",
+    "version": "1.0.21",
+    "tag": "v1.0.21",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.21",
     "files": [
       {
-        "name": "pjfun-android_1.0.20.apk",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-android_1.0.20.apk",
-        "size": 52148539,
-        "sha256": "4925a4c444f28e6582f171d45e24138d439968729e04a272320954dcf643253b",
-        "builtAt": "2026-11-11T03:56:22.980Z"
+        "name": "pjfun-android_1.0.21.apk",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-android_1.0.21.apk",
+        "size": 52132155,
+        "sha256": "0f7fe69f898358badca5a1762876755da356131dab829beca31d5e30cf8f908f",
+        "builtAt": "2026-11-13T09:29:13.478Z"
       },
       {
-        "name": "pjfun-android_1.0.20.aab",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-android_1.0.20.aab",
-        "size": 53499710,
-        "sha256": "f05142fb0dd40065bcdd885c2e39479d59efe4ab377567dc48bc8c4e413ed6b9",
-        "builtAt": "2026-11-11T03:55:44.965Z"
+        "name": "pjfun-android_1.0.21.aab",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-android_1.0.21.aab",
+        "size": 53483579,
+        "sha256": "965f9d6dec38331da144d9bd5700228bc1fb6ff7fdad06c5c0467ea074cf5366",
+        "builtAt": "2026-11-13T09:28:52.416Z"
       }
     ],
     "pkg": "top.pjfun",
-    "versionCode": "10020"
+    "versionCode": "10021"
   },
   "ios": {
     "distribution": "testflight"
   },
   "linux": {
-    "version": "1.0.20",
-    "tag": "v1.0.20",
-    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.20",
+    "version": "1.0.21",
+    "tag": "v1.0.21",
+    "releaseUrl": "https://github.com/LXC-9349/pjfun.top/releases/tag/v1.0.21",
     "files": [
       {
-        "name": "pjfun-desktop_1.0.20_amd64.deb",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_amd64.deb",
-        "size": 64578862,
-        "sha256": "01f70558cbb0d3b5cd70e88a6a8f92fe2d8ad0c8b3426b61853619e02fce5ec6",
-        "builtAt": "2026-11-11T04:00:20.800Z"
+        "name": "pjfun-desktop_1.0.21_amd64.deb",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-desktop_1.0.21_amd64.deb",
+        "size": 64530912,
+        "sha256": "37c28fe2046434d985c83ef74c14124e8c73099703ee3cf8f6d0c86c61606685",
+        "builtAt": "2026-11-13T09:42:30.760Z"
       },
       {
-        "name": "pjfun-desktop_1.0.20_amd64.AppImage",
-        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.20/pjfun-desktop_1.0.20_amd64.AppImage",
-        "size": 142858744,
-        "sha256": "ef4d91c0669989934c6d37e7c1536b2dc2ec7efafd6a281124369e0a66a439b3",
-        "builtAt": "2026-11-11T04:00:22.958Z"
+        "name": "pjfun-desktop_1.0.21_amd64.AppImage",
+        "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-desktop_1.0.21_amd64.AppImage",
+        "size": 142785016,
+        "sha256": "4f41c63243b323441d6f1bb6920ce4ed4e82acfafbe439be99fca1b6f1b5e135",
+        "builtAt": "2026-11-13T09:42:32.817Z"
       }
     ],
     "formats": [

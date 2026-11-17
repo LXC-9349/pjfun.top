@@ -1,11 +1,19 @@
 {
-  "version": "1.0.21",
-  "notes": "PJfun 1.0.21",
-  "pub_date": "2026-11-13T09:42:52.840Z",
+  "version": "1.0.22",
+  "notes": "PJfun 1.0.22",
+  "pub_date": "2026-11-17T23:28:13.976Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSHdLT3FmSy9jZnI2aEVEVnJPQWpWaWkwVDlkQ1dPL0I4N0xlUVdXbUo2N0ZNdVFHdlQweWVRZW4zVWtKTzRXS1FGUVM1V3FpVjJPVWxKK1lWRGkxY1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0NTYxNzgwCWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yMQppWEJFZ3FIYTR6YXpBV3J5RzE5NU02RDZDZklpOTZlV3Z6MDZjTlNnWjZYTEp2QWc2bWNDZlpsb01EMEpQejBRSWdnQlIrdG13M0hyVGxTeEhMb1lEdz09Cg==",
-      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.21/pjfun-desktop_1.0.21_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSC9sVTRackNmRWk5bXZOMjRob3hhMXNmblZ6YVFUdTl5TzFBRVFXM25SMGxnZkJTYzBEbjZDL2o2Sk9rd0F4bkkvS3NhbG90ZFdQZXQyMVFIcnZNNlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTU3OTgxCWZpbGU6UEpmdW4gRGVza3RvcF8xLjAuMjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMC4yMgpmVU05L0dTa1RGYTFGdWFUeTJpQkh4TXdILytNK3VneDM3WEhVdk1GcGtBK21oYXdBdnVLa0N5ZzBxZjdod3N6VUgzWlMvTWpCV3FLQTVtQzJVaWdEZz09Cg==",
+      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.22/PJfun-1.0.22-windows-amd64.exe"
+    },
+    "darwin-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSHo5dndLemVNWFY4dllnVHk0aVhuVHljaHpjeDdNSTZ0MVUrZTEra3krbUNZQTYvSTRYSFJURVVmN0pibUxkU0h6OTlSanNsU2JrNkJyU3pQck00eHdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTU3NjczCWZpbGU6UEpmdW4gRGVza3RvcC5hcHAudGFyLmd6CXZlcnNpb246MS4wLjIyCms2ZW9CUXJQUVVDZTR1eWFRL1lEeFdlajlRY1Z3akNNc2xFWEdFbTN4T2V4QmUycXRmRmJJRUVNaDlYKzFSd2xxZU1obWNJTWJaMmFiS00wNk85OEFnPT0K",
+      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.22/PJfun-1.0.22-macos-universal.app.tar.gz"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUdU5xREExT0YxSHo5dndLemVNWFY4dllnVHk0aVhuVHljaHpjeDdNSTZ0MVUrZTEra3krbUNZQTYvSTRYSFJURVVmN0pibUxkU0h6OTlSanNsU2JrNkJyU3pQck00eHdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTU3NjczCWZpbGU6UEpmdW4gRGVza3RvcC5hcHAudGFyLmd6CXZlcnNpb246MS4wLjIyCms2ZW9CUXJQUVVDZTR1eWFRL1lEeFdlajlRY1Z3akNNc2xFWEdFbTN4T2V4QmUycXRmRmJJRUVNaDlYKzFSd2xxZU1obWNJTWJaMmFiS00wNk85OEFnPT0K",
+      "url": "https://github.com/LXC-9349/pjfun.top/releases/download/v1.0.22/PJfun-1.0.22-macos-universal.app.tar.gz"
     }
   }
 }
